@@ -89,15 +89,33 @@
       border-right: none;
       box-shadow: none;
     }
-    th.col-vol { color: #9ec5ff; font-weight: 500; }
-    th.col-pct { color: #e8c07a; font-weight: 500; }
-    td.col-vol, td.col-pct {
-      font-weight: 500;
-      font-size: 14px;
-      background: transparent;
+    th.col-vol, th.col-pct { font-weight: 700; }
+    th.col-vol {
+      color: #7eb8ff;
+      background: rgba(45, 104, 255, 0.22);
     }
-    td.col-vol { color: #b8d4ff; }
-    td.col-pct { color: #e8c07a; }
+    th.col-pct {
+      color: #ffcc55;
+      background: rgba(255, 176, 32, 0.2);
+    }
+    td.col-vol, td.col-pct {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    td.col-vol {
+      color: #8ec5ff;
+      background: rgba(59, 130, 246, 0.14);
+      text-shadow: 0 0 16px rgba(59, 130, 246, 0.55);
+    }
+    td.col-pct {
+      color: #ffd966;
+      background: rgba(245, 158, 11, 0.14);
+      text-shadow: 0 0 16px rgba(245, 158, 11, 0.45);
+    }
+    tr:hover td.col-vol { background: rgba(59, 130, 246, 0.22); }
+    tr:hover td.col-pct { background: rgba(245, 158, 11, 0.2); }
+    .card-top th.col-vol { color: #9ec5ff; }
+    .card-top th.col-pct { color: #e8c07a; }
     .scroll { max-height: 520px; overflow: auto; }
     .pending { color: #f2a93b; }
     .tag {
